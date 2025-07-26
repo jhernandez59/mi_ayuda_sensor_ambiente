@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "mi-sensor-ayuda",
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

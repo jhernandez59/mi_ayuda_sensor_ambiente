@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Usuario - Sensor Ambiental</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>🌿 Guía de Usuario del Sensor Ambiental</h1>
+    </header>
+
+    <main class="container">
+      <!-- SECCIÓN 1: COORDENADAS -->
+      <details class="accordion" open>
+        <summary class="accordion-header">
+          <h2>Paso 1: Obtener tus Coordenadas y Altura</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Para que tu sensor ofrezca datos precisos, primero necesitamos saber
+            exactamente dónde está ubicado. Sigue este video o los pasos a
+            continuación.
+          </p>
+
+          <!-- Incrustar Video -->
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TU_URL_DE_TU_VIDEO"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h3>Coordendas método con Google Maps (Recomendado)</h3>
+          <ol class="steps">
+            <li>
+              <strong>Abre Google Maps:</strong> Ve a
+              <a href="https://google.com/maps" target="_blank"
+                >google.com/maps</a
+              >.
+            </li>
+            <li>
+              <strong>Busca tu dirección:</strong> Usa la barra de búsqueda para
+              encontrar la ubicación de tu sensor.
+            </li>
+            <li>
+              <strong>Obtén las Coordenadas:</strong> Haz
+              <strong>clic derecho</strong> sobre el punto exacto en el mapa.
+              Las coordenadas (ej: `4.55, -75.66`) aparecerán en la parte
+              superior del menú. Haz clic sobre ellas para copiarlas.
+              <strong>Pega las coordenadas</strong> en un bloc de notas para
+              usarlas en el siguiente paso.
+              <img
+                src="images/paso3_maps.gif"
+                alt="Animación de cómo obtener coordenadas en Google Maps"
+                class="guide-image"
+              />
+            </li>
+          </ol>
+
+          <h3>Altura método con Google Earth (Recomendado)</h3>
+          <ol class="steps">
+            <li>
+              <strong>Abre Google Earth:</strong> Ve a
+              <a href="https://google.com/earth" target="_blank"
+                >google.com/earth</a
+              >.
+            </li>
+            <li>
+              <strong>Busca tus coordenadas:</strong> Usa la barra de búsqueda
+              para encontrar la ubicación de tu sensor.<strong
+                >Pega las coordenadas</strong
+              >
+              que copiaste de Google Maps en la barra de búsqueda.
+              <strong>Presiona Enter</strong>. Google Earth te llevará volando
+              directamente a esa ubicación.
+            </li>
+            <li>
+              <strong>Obtén la altura:</strong>Mueve el cursor del ratón sobre
+              el punto exacto en el mapa. Puedes usar la rueda del mouse para
+              acercar o alejar la imagen. Haz
+              <strong>clic derecho</strong> sobre la ubicación exacta, en el
+              menú emergente, selecciona Get Info (Obtener Información),
+              aparecerá un recuadro con el valor de Elevation (Elevación), es tu
+              altura en metros. Anota este numero o haz clic derecho sobre el
+              numero para copiarlo.
+              <img
+                src="images/paso3_earth.gif"
+                alt="Animación de cómo obtener altura en Google Earth"
+                class="guide-image"
+              />
+            </li>
+          </ol>
+
+          <div class="tips">
+            <h4>💡 Consejos Importantes</h4>
+            <ul>
+              <li>
+                Usa un <strong>punto (.)</strong> como separador decimal, no una
+                coma.
+              </li>
+              <li>
+                ¡No olvides el signo negativo <strong>(-)</strong> para la
+                longitud si estás en América!
+              </li>
+              <li>Una altura aproximada es suficiente.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- SECCIÓN 2: SETUP -->
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h2>Paso 2: Configuración del Sensor</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Aquí se explicará cómo conectar el sensor a la red WiFi y introducir
+            los datos obtenidos en el paso anterior.
+          </p>
+          <!-- Contenido de la Sección 2 -->
+        </div>
+      </details>
+
+      <!-- SECCIÓN 3: DASHBOARD -->
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h2>Paso 3: Entendiendo el Dashboard</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Una guía rápida para interpretar todos los datos que muestra tu
+            nuevo dashboard.
+          </p>
+          <!-- Contenido de la Sección 3 -->
+        </div>
+      </details>
+    </main>
+  </body>
+</html>
