@@ -114,3 +114,13 @@ details[open] > summary.accordion-header::after {
   margin-top: 0;
   color: #2980b9;
 }
+
+.guide-video {
+  max-width: 100%; /* Lo hace responsive */
+  height: auto; /* Mantiene la proporción */
+  display: block; /* Evita espacios extra debajo del video */
+  margin: 20px auto; /* Centra el video y le da espacio arriba y abajo */
+  border: 1px solid #ddd; /* Un borde sutil */
+  border-radius: 8px; /* Esquinas redondeadas, un toque moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Una sombra suave para que resalte */
+}
