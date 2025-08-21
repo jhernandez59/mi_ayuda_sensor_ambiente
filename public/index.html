@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Usuario - Sensor Ambiental</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>🌿 Guía de Usuario del Sensor Ambiental</h1>
+    </header>
+
+    <main class="container">
+      <!-- SECCIÓN 1: COORDENADAS -->
+      <details class="accordion" open>
+        <summary class="accordion-header">
+          <h2>Paso 1: Obtener tus Coordenadas y Altura</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Para que tu sensor ofrezca datos precisos, primero necesitamos saber
+            exactamente dónde está ubicado.
+          </p>
+
+          <h3>Coordendas método con Google Maps (Recomendado)</h3>
+          <ol class="steps">
+            <li>
+              <strong>Abre Google Maps:</strong> Ve a
+              <a href="https://google.com/maps" target="_blank"
+                >google.com/maps</a
+              >.
+            </li>
+            <li>
+              <strong>Busca tu dirección:</strong> Usa la barra de búsqueda para
+              encontrar la ubicación de tu sensor.
+            </li>
+            <li>
+              <strong>Obtén las Coordenadas:</strong> Haz
+              <strong>clic derecho</strong> sobre el punto exacto en el mapa.
+              Las coordenadas (ej: `4.55, -75.66`) aparecerán en la parte
+              superior del menú. Haz clic sobre ellas para copiarlas.
+              <strong>Pega las coordenadas</strong> en un bloc de notas para
+              usarlas en el siguiente paso.
+            </li>
+          </ol>
+          <!-- Incrustas el PRIMER video aquí -->
+          <!-- Video para el Paso 1 -->
+          <video autoplay loop muted playsinline controls class="guide-video">
+            <source src="videos/coordenadas.mp4" type="video/mp4" />
+            <!-- Mensaje para navegadores muy antiguos -->
+            Tu navegador no soporta videos.
+          </video>
+
+          <hr />
+          <!-- Un separador visual -->
+
+          <h3>Altura método con Google Earth (Recomendado)</h3>
+          <ol class="steps">
+            <li>
+              <strong>Abre Google Earth:</strong> Ve a
+              <a href="https://google.com/earth" target="_blank"
+                >google.com/earth</a
+              >.
+            </li>
+            <li>
+              <strong>Busca tus coordenadas:</strong> Usa la barra de búsqueda
+              para encontrar la ubicación de tu sensor.<strong
+                >Pega las coordenadas</strong
+              >
+              que copiaste de Google Maps en la barra de búsqueda.
+              <strong>Presiona Enter</strong>. Google Earth te llevará volando
+              directamente a esa ubicación.
+            </li>
+            <li>
+              <strong>Obtén la altura:</strong> Mueve el cursor del ratón sobre
+              el punto exacto en el mapa. Puedes usar la rueda del mouse para
+              acercar o alejar la imagen. Haz
+              <strong>clic derecho</strong> sobre la ubicación exacta, en el
+              menú emergente, selecciona Get Info (Obtener Información),
+              aparecerá un recuadro con el valor de Elevation (Elevación), es tu
+              altura en metros. Anota este numero o haz clic derecho sobre el
+              numero para copiarlo.
+            </li>
+          </ol>
+          <!-- Incrustas el SEGUNDO video aquí -->
+          <!-- Video para el Paso 2 -->
+          <video autoplay loop muted playsinline controls class="guide-video">
+            <source src="videos/altura.mp4" type="video/mp4" />
+            <!-- Mensaje para navegadores muy antiguos -->
+            Tu navegador no soporta videos.
+          </video>
+
+          <div class="tips">
+            <h4>💡 Consejos Importantes</h4>
+            <ul>
+              <li>
+                Para las coordenadas usa un <strong>punto (.)</strong> como
+                separador decimal, no una coma.
+              </li>
+              <li>
+                ¡No olvides el signo negativo <strong>(-)</strong> para la
+                longitud si estás en América!
+              </li>
+              <li>
+                Para la altura, no uses punto para los miles, una altura
+                aproximada es suficiente.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- SECCIÓN 2: SETUP -->
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h2>Paso 2: Guia de Configuración del Sensor Ambiental</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Sigue estos pasos para conectar tu sensor a la red Wi-Fi de tu casa
+            y empezar a ver las mediciones.
+          </p>
+          <!-- Contenido de la Sección 2 -->
+          <ol class="steps">
+            <li>
+              <strong>Antes de Empezar: Requisitos</strong>
+              <p>Asegúrate de tener a mano lo siguiente:</p>
+              <ul>
+                <li>
+                  <strong>Fuente de Alimentacion:</strong> Un adaptador de
+                  corriente USB que suministre al menos 2 Amperios (2A) o 10
+                  Vatios (10W). Un cargador de celular de buena calidad es
+                  perfecto.
+                </li>
+                <li>
+                  <strong>Cable USB:</strong> El sensor utiliza un conector tipo
+                  micro-USB.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Pasos para la Configuración</strong>
+              <p>(Video: Mira el tutorial completo de configuración)</p>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                controls
+                class="guide-video"
+              >
+                <source src="videos/config.mp4" type="video/mp4" />
+                <!-- Mensaje para navegadores muy antiguos -->
+                Tu navegador no soporta videos.
+              </video>
+              <ol>
+                <li>
+                  <strong>Encender el Sensor:</strong> Conecta el sensor a la
+                  fuente de alimentación usando el cable USB. El sensor se
+                  encenderá automáticamente.
+                </li>
+                <li>
+                  <strong>Conectarse a la Red del Sensor:</strong> El sensor
+                  creará su propia red Wi-Fi temporal. Desde tu PC o celular,
+                  busca las redes Wi-Fi disponibles y conéctate a la que se
+                  llama <strong>Sensor Ambiente</strong>.<br />
+                  <i
+                    >(Nota: Es normal que tu dispositivo te diga que esta red no
+                    tiene acceso a Internet. Ignora el aviso y mantente
+                    conectado).</i
+                  >
+                </li>
+                <li>
+                  <strong>Acceder a la Página de Configuración:</strong> Una vez
+                  conectado a la red <strong>Sensor Ambiente</strong>, abre tu
+                  navegador web (Chrome, Safari, Firefox, etc.) e ingresa la
+                  siguiente dirección en la barra de direcciones:<br />
+                  <strong>http://192.168.4.1</strong>
+                </li>
+                <li>
+                  <strong>Registrar tus Datos:</strong> En la página que
+                  aparece, rellena el formulario con la información de tu red
+                  local:
+                  <ul>
+                    <li>
+                      <strong>Red Wi-Fi Local (SSID):</strong> El nombre exacto
+                      de la red Wi-Fi de tu casa.
+                    </li>
+                    <li>
+                      <strong>Contraseña de la Red:</strong> La contraseña de la
+                      red Wi-Fi de tu casa.
+                    </li>
+                    <li>
+                      <strong>Nombre del Sensor:</strong> Un nombre para
+                      identificarlo (ejemplos: Pedro en Bogota, Sensor de la
+                      Sala, etc).
+                    </li>
+                    <li>
+                      <strong>Coordenadas y Altura:</strong> Introduce la
+                      ubicación para obtener datos más precisos.
+                    </li>
+                    <li>
+                      <strong>Guardar y Esperar:</strong> Haz clic en "Guardar".
+                      El sensor se reiniciará e intentará conectarse a la red de
+                      tu casa con los datos que le has proporcionado.
+                    </li>
+                    <li>
+                      <strong>Confirmar la Conexión (El LED):</strong> Sabrás
+                      que el sensor se ha conectado correctamente a tu red
+                      cuando el LED indicador muestre el siguiente patrón: un
+                      destello corto cada 4 segundos (la mayor parte del tiempo,
+                      el LED estará apagado).
+                    </li>
+                    <li>
+                      <strong>⚠️ ¡Importante! Vuelve a tu Red Wi-Fi:</strong>
+                      Ahora que el sensor ya está en tu red, vuelve a conectar
+                      tu PC o celular a la red Wi-Fi normal de tu casa.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Cómo Ver los Datos del Sensor</strong>
+              <p>
+                Una vez que todo está configurado y tu PC o celular está en la
+                misma red que el sensor, tienes dos formas de ver las
+                mediciones:
+              </p>
+              <ol>
+                <li>
+                  <strong>Método 1 (Recomendado solo para PC):</strong>
+                  Abre tu navegador y visita:
+                  <strong>http://sensor-ambiente.local</strong>
+                </li>
+                <li>
+                  <strong>Método 2 (Alternativo):</strong> En la página de
+                  sensor-ambiente.local, verás la dirección
+                  <strong>IP</strong> que tu router le asignó al sensor (por
+                  ejemplo: 192.168.1.7). Puedes escribir esa dirección IP
+                  directamente en el navegador de cualquier dispositivo (PC,
+                  tablet, celular) que esté en la misma red para ver la misma
+                  página de estado.
+                </li>
+              </ol>
+
+              <!-- ===== INICIO DE LA MODIFICACIÓN ===== -->
+              <div class="tips">
+                <h4>✨ ¡Novedad! Encuentra la ubicación perfecta</h4>
+                <p>
+                  Para ayudarte a encontrar el mejor lugar para tu sensor, la
+                  página
+                  <strong>http://sensor-ambiente.local</strong> se actualiza
+                  automáticamente cada 10 segundos.
+                </p>
+                <p>
+                  Mientras mueves el sensor por tu casa, observa el valor
+                  <strong>"Señal WiFi (RSSI)"</strong> en el dashboard:
+                </p>
+                <ul>
+                  <li>
+                    <strong
+                      >Un valor más bajo (más negativo) indica una señal MÁS
+                      FUERTE.</strong
+                    >
+                    Por ejemplo, una señal de <code>-50 dBm</code> es mucho
+                    mejor y más estable que una de <code>-85 dBm</code>.
+                  </li>
+                  <li>
+                    Busca un lugar donde este número sea lo más cercano posible
+                    a cero para garantizar la mejor conexión a tu red.
+                  </li>
+                </ul>
+              </div>
+              <!-- ===== FIN DE LA MODIFICACIÓN ===== -->
+            </li>
+          </ol>
+        </div>
+      </details>
+
+      <!-- SECCIÓN 3: DASHBOARD -->
+      <!-- SECCIÓN 3: DASHBOARD -->
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h2>Paso 3: Entendiendo el Dashboard</h2>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Una vez que tu sensor está configurado y en línea, puedes acceder a
+            un completo dashboard web para visualizar todos los datos que
+            recopila, tanto del interior de tu hogar como del clima exterior.
+          </p>
+
+          <h3>Accediendo al Dashboard Principal</h3>
+          <ol class="steps">
+            <li>
+              <strong>Localiza el código único de tu tarjeta:</strong> Cada
+              sensor tiene un identificador único (conocido como dirección MAC).
+              Deberías tenerlo en una tarjeta o etiqueta que vino con tu
+              dispositivo (ejemplo: <code>68C63A87F36C</code>).
+            </li>
+            <li>
+              <strong>Ingresa a la página web:</strong> Abre tu navegador e
+              introduce la siguiente dirección, reemplazando
+              <code>TU_CODIGO_MAC</code> con el código de tu tarjeta:
+              <br />
+              <a
+                href="https://esp8266-sensor-8d08f.web.app/?mac=TU_CODIGO_MAC"
+                target="_blank"
+                >https://esp8266-sensor-8d08f.web.app/?mac=<strong
+                  >TU_CODIGO_MAC</strong
+                ></a
+              >
+            </li>
+          </ol>
+
+          <div class="tips">
+            <h4>
+              💡 ¿No encuentras el código de tu tarjeta? ¡No hay problema!
+            </h4>
+            <ol>
+              <li>
+                Mientras estés en la misma red Wi-Fi que el sensor, visita
+                <a href="http://sensor-ambiente.local" target="_blank"
+                  >http://sensor-ambiente.local</a
+                >.
+              </li>
+              <li>
+                Busca el campo que dice <strong>"MAC"</strong>. Verás un código
+                con dos puntos (ej: <code>68:C6:3A:87:F3:6C</code>).
+              </li>
+              <li>
+                Copia ese código y simplemente
+                <strong>elimina los dos puntos (:)</strong> para obtener el
+                formato correcto: <code>68C63A87F36C</code>.
+              </li>
+            </ol>
+          </div>
+
+          <hr />
+
+          <h3>La Página Principal: Un Vistazo Rápido</h3>
+          <p>
+            La página principal te muestra la información más relevante a través
+            de tarjetas interactivas. Haz clic en cualquiera de ellas para ir a
+            la página de detalles.
+          </p>
+
+          <!-- NOTA: Reemplaza 'images/dashboard_principal.png' con la ruta a tu captura de pantalla -->
+          <img
+            src="images/dashboard_principal.png"
+            alt="Vista de la página principal del dashboard"
+            class="guide-image"
+          />
+
+          <h4>Tarjeta de Confort Térmico</h4>
+          <p>
+            Te informa sobre la temperatura exacta del lugar donde está
+            instalado el sensor, permitiéndote conocer el ambiente de la
+            habitación de un solo vistazo.
+          </p>
+
+          <h4>Tarjeta de Humedad y Ventilación</h4>
+          <p>
+            Esta tarjeta inteligente te ayuda a decidir cuándo es un buen
+            momento para ventilar tu hogar. Compara la humedad interior con la
+            exterior y te ofrece recomendaciones para abrir o cerrar las
+            ventanas, ayudando a prevenir la formación de moho y a mantener un
+            ambiente saludable.
+          </p>
+
+          <h4>Tarjeta de Diferencia de Temperatura</h4>
+          <p>
+            Muestra la diferencia entre la temperatura de tu casa y la del
+            exterior. Esta información es muy útil para evitar cambios bruscos
+            de temperatura al salir o entrar, que a veces pueden causar
+            resfriados por "choque térmico".
+          </p>
+
+          <h4>Tarjeta de Tendencia de Presión</h4>
+          <p>
+            Analiza los cambios en la presión atmosférica para ofrecer un
+            pronóstico de probabilidad de lluvia. Una presión que baja
+            rápidamente suele indicar la llegada de mal tiempo, mientras que una
+            presión que sube indica tiempo estable.
+          </p>
+
+          <div class="warning">
+            <h4>⚠️ Un Pronóstico es una Probabilidad</h4>
+            <p>
+              Es muy importante entender que este dato es una
+              <strong>probabilidad basada en la presión</strong>, no una
+              certeza. La meteorología es compleja y la presión es solo uno de
+              muchos factores. Úsalo como un indicador útil, pero siempre
+              contrástalo con el pronóstico completo que encontrarás en la
+              página de detalles.
+            </p>
+          </div>
+
+          <hr />
+
+          <h3>La Página de Detalles: Profundizando en los Datos</h3>
+          <p>
+            Aquí encontrarás un desglose completo de todas las variables, el
+            estado del dispositivo y un pronóstico más detallado.
+          </p>
+
+          <!-- NOTA: Reemplaza 'images/dashboard_detalles.png' con la ruta a tu captura de pantalla -->
+          <img
+            src="images/dashboard_detalles.png"
+            alt="Vista de la página de detalles del dashboard"
+            class="guide-image"
+          />
+
+          <h4>Sección: Clima Interior</h4>
+          <p>
+            Muestra las mediciones actuales capturadas por tu sensor. Las
+            flechas (↗️ ↘️ ➡️) y los valores (+/-) te indican la tendencia de
+            cada variable en los últimos 15 minutos, para que sepas si la
+            temperatura está subiendo, la humedad bajando, etc. La fecha del
+            "Último Reporte" te confirma qué tan recientes son los datos.
+          </p>
+
+          <h4>Sección: Clima Exterior</h4>
+          <p>
+            Esta sección obtiene datos de un servicio meteorológico satelital
+            para tu ubicación. Te ofrece una visión completa del tiempo afuera,
+            incluyendo la sensación térmica, la calidad del aire (AQI) y, lo más
+            importante, un pronóstico de lluvia a corto y medio plazo.
+          </p>
+
+          <div class="warning">
+            <h4>🌧️ Sobre el Pronóstico de Lluvia</h4>
+            <p>
+              Nuevamente, recuerda que los porcentajes representan la
+              <strong>probabilidad</strong> de que ocurra una precipitación en
+              ese periodo. Un 80% es una probabilidad muy alta, ¡pero no una
+              garantía absoluta! Es la mejor estimación basada en los datos
+              disponibles.
+            </p>
+          </div>
+
+          <h4>Sección: Estado del Dispositivo</h4>
+          <p>
+            Este es el centro de diagnóstico de tu sensor. Aquí puedes
+            verificar:
+          </p>
+          <ul>
+            <li>
+              <strong>Estado:</strong> Si está conectado y enviando datos
+              correctamente.
+            </li>
+            <li>
+              <strong>Señal WiFi (RSSI):</strong> La calidad de tu conexión a
+              internet (recuerda, un número más cercano a 0 es mejor).
+            </li>
+            <li>
+              <strong>Dirección IP:</strong> Útil para acceder localmente al
+              sensor.
+            </li>
+            <li>
+              <strong>Presión Absoluta (sensor):</strong> Es la lectura de
+              presión "cruda" del sensor antes de ser ajustada al nivel del mar.
+            </li>
+            <li>
+              <strong>Firmware:</strong> La versión del software que está
+              corriendo tu dispositivo.
+            </li>
+          </ul>
+        </div>
+      </details>
+    </main>
+  </body>
+</html>

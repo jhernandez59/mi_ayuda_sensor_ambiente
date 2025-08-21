@@ -96,6 +96,10 @@ details[open] > summary.accordion-header::after {
 }
 
 .guide-image {
+  display: block; /* Esencial para que el margen automático funcione */
+  margin-left: auto;
+  margin-right: auto;
+
   max-width: 100%;
   border: 1px solid #ccc;
   margin-top: 10px;
@@ -123,4 +127,16 @@ details[open] > summary.accordion-header::after {
   border: 1px solid #ddd; /* Un borde sutil */
   border-radius: 8px; /* Esquinas redondeadas, un toque moderno */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Una sombra suave para que resalte */
+}
+
+.warning {
+  background-color: #fffbe6; /* Un amarillo pálido */
+  border-left: 5px solid #ffc107; /* Un borde amarillo más oscuro */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.warning h4 {
+  margin-top: 0;
+  color: #856404; /* Un color oscuro para el título */
 }
